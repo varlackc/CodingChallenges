@@ -3,9 +3,11 @@
 */
 
 var message = "";
-var fizzValue = 2;
+var fizzValue = parseInt($('#fizzValue').val()); //2;
 var buzzValue = 3;
 var result = "";
+
+console.log("Fizz Value: " + fizzValue);
 
 $(document).ready(function() {
     $('#submitButton').click(function() {
