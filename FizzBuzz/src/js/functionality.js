@@ -22,4 +22,12 @@ for (var i = 1; i <= 100; i++) {
 
     //reset the message value
     message = "";
+
+    $(document).ready(function() {
+        // Code to display values
+        $('#submitButton').click(function() {
+            // JavaScript 
+            $('#details').html(message);
+        });
+    });
 }
