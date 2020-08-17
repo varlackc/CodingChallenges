@@ -5,23 +5,33 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="src/js/functionality.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
     <title>FizzBuzz Challenge</title>
 </head>
 
 <body>
 
-    <h2>Fizz Buzz</h2>
-    <p>This program will display the word fizz if a number is divisible by the fizz value, will display buzz if the numer is divisible by the buzz value , or just display the number if it is not divisible by neither the fizz nor the buzz value.</p>
-
+    <div class="introHeading">
+        <h2>Fizz Buzz</h2>
+    </div>
+    <div class="introContent">
+        <p>This program will display the word fizz if a number is divisible by the fizz value, will display buzz if the numer is divisible by the buzz value , or just display the number if it is not divisible by neither the fizz nor the buzz value.</p>
+    </div>
     <div class="container">
         <hr>
         <!-- html code here -->
-        Fizz Value: <input type='text' id='fizzValue' value='2' size='4' /><br/> Buzz Value: <input type='text' id='buzzValue' value='3' size='4' /><br/>
-        <input type="submit" id="submitButton" value=" Go" />
-        <br/><br/>
+
+        Fizz Value: <input type='text' id='fizzValue' value='2' size='4' /><br/> Buzz Value: <input type='text' id='buzzValue' value='3' size='4' /><br/> Start Value:<input type='text' id='startingValue' value='1' size='4' /><br/> End Value: <input type='text'
+            id='endingValue' value='100' size='4' /><br/>
+        <br/>
+        <button type="button" id="submitButton" class="btn btn-success">Run The Program</button> <button type="button" id="clearButton" class="btn btn-info">Clear Screen</button>
+        <br/>
+        <hr>
         <div id="details"></div>
+
     </div>
 
 </body>
