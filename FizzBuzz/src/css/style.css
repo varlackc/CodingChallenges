@@ -4,6 +4,12 @@ body {
     background-color: #D9F3E4;
     /* #A3EBC2; */
     background-image: url('../img/FizBuzzBG.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
 }
 
 h2 {
@@ -16,12 +22,20 @@ p {
     line-height: 1.75;
 }
 
+
+/* Text Background */
+
+.textPad {
+    margin: 10px;
+    background: #D9F3E4;
+}
+
 .introHeading {
     padding: 25px;
     text-align: center;
 }
 
 .introContent {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
