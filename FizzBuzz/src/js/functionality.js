@@ -28,7 +28,7 @@ $(document).ready(function() {
             if (i % buzzValue == 0) {
                 message += " - Buzz";
             }
-            result += (i + message + "<br/>"); //output the result
+            result += ("<p Class='textPad'>" + i + message + "</p>"); //output the result
             message = ""; //reset the message value
         }
         result += "<br/>";
