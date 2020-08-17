@@ -2,18 +2,24 @@
     Fizz Buzz Challenge
 */
 
-var message = "";
-var fizzValue = parseInt($('#fizzValue').val()); //2;
-var buzzValue = 3;
-var result = "";
-
-console.log("Fizz Value: " + fizzValue);
-
 $(document).ready(function() {
-    $('#submitButton').click(function() {
-        // Code to display values
-        for (var i = 1; i <= 100; i++) {
 
+
+    $('#submitButton').click(function() {
+
+        //Declare Variables
+        var message = "";
+        var fizzValue = parseInt($('#fizzValue').val());
+        var buzzValue = parseInt($('#buzzValue').val());
+        var startValue = parseInt($('#startingValue').val());
+        var endValue = parseInt($('#endingValue').val());
+        var result = "";
+
+        console.log("Fizz Value: " + fizzValue);
+        console.log("Buzz Value" + buzzValue);
+
+        // Loop to improve
+        for (var i = startValue; i <= endValue; i++) {
             //Check to see if Fizz value should be outputed
             if (i % fizzValue == 0) {
                 message = " - Fizz";
@@ -22,17 +28,16 @@ $(document).ready(function() {
             if (i % buzzValue == 0) {
                 message += " - Buzz";
             }
-
-            //output the result
-            console.log(i + "\t" + message);
-            result += (i + message + "<br/>");
-
-            //reset the message value
-            message = "";
+            result += (i + message + "<br/>"); //output the result
+            message = ""; //reset the message value
         }
         result += "<br/>";
 
         // JavaScript 
         $('#details').html(result);
+    });
+
+    $('#clearButton').click(function() {
+        $('#details').html(" ");
     });
 });
