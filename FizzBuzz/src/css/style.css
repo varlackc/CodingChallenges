@@ -19,14 +19,15 @@ h2 {
 }
 
 p {
-    line-height: 1.75;
+    line-height: 2;
 }
 
 
 /* Text Background */
 
 .textPad {
-    margin: 10px;
+    margin: 50px;
+    padding: 10px;
     background: #D9F3E4;
 }
 
