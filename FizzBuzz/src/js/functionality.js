@@ -18,7 +18,7 @@ $(document).ready(function() {
         console.log("Fizz Value: " + fizzValue);
         console.log("Buzz Value" + buzzValue);
 
-        // Loop to improve
+        // Loop to process the different numbers
         for (var i = startValue; i <= endValue; i++) {
             //Check to see if Fizz value should be outputed
             if (i % fizzValue == 0) {
@@ -33,10 +33,11 @@ $(document).ready(function() {
         }
         result += "<br/>";
 
-        // JavaScript 
+        // Output the result to the browser 
         $('#details').html(result);
     });
 
+    // Clear the screen
     $('#clearButton').click(function() {
         $('#details').html(" ");
     });
