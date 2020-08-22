@@ -1,2 +1,4 @@
 # CodingChallenges
-List of Coding Challenges
+Here is a list of different coding challenges
+* FizzBuzz
+* Game Of Life
