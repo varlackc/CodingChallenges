@@ -1,7 +1,8 @@
 body {
     margin: 0;
     /*font-family: 'Lato', sans-serif;*/
-    background-color: #D9F3E4;
+    background-color: black;
+    color: #D9F3E4;
     /* #A3EBC2; */
     /*background-image: url('../img/GameOfLifeBG.jpg');*/
     height: 100%;
@@ -39,4 +40,9 @@ p {
 .introContent {
     padding-left: 150px;
     padding-right: 150px;
+}
+
+#canvas {
+    margin: 50px;
+    background: white;
 }
