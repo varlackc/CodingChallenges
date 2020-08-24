@@ -25,6 +25,7 @@ function setup() {
     canvas.height = size;
     context.scale(scale, scale);
     context.fillStyle = "black";
+    cells = createCells();
 }
 
 function createCells() {
