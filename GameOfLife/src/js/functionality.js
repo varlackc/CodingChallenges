@@ -31,7 +31,7 @@ function setup() {
 function createCells() {
     let arr = new Array(resolution);
     for (let x = 0; x < resolution; x++) {
-        let rows = new Array(resolution);
+        let cols = new Array(resolution);
         for (let y = 0; y < resolution; y++) {
             cols[y] = false;
         }
