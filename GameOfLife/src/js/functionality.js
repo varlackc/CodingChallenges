@@ -42,6 +42,7 @@ function createCells() {
     return arr;
 }
 
+// Generate random position of the cell
 function randomCells() {
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
