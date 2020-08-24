@@ -50,7 +50,7 @@ function randomCells() {
 
 //function drawCells() {
 //for (let)
-}
+//}
 
 /*
 
