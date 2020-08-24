@@ -49,7 +49,7 @@ function randomCells() {
 }
 
 //function drawCells() {
-for (let)
+//for (let)
 }
 
 /*
