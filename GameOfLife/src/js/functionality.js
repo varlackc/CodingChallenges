@@ -48,8 +48,8 @@ function randomCells() {
     }
 }
 
-function drawCells() {
-    for (let)
+//function drawCells() {
+for (let)
 }
 
 /*
