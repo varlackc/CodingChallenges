@@ -20,6 +20,7 @@ let cells;
 setup();
 randomCells();
 
+// Initial Setup of the function
 function setup() {
     canvas.width = size;
     canvas.height = size;
