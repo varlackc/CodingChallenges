@@ -72,11 +72,13 @@ function steps() {
 
 }
 
-function getNeighbourCount() {
+function getNeighbourCount(x, y) {
     let count = 0;
     for (let yy = -1; yy < 2; yy++) {
         for (let xx = -1; xx < 2; xx++) {
             if (xx === 0 && yy === 0) continue;
+            if (x + xx < 0 || x + xx > resolution - 1) continue;
+            if (y + yy < 0 || y + yy > resolution - 1) continue;
         }
     }
 }
