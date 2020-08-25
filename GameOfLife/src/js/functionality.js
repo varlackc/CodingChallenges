@@ -18,7 +18,7 @@ let cells;
 
 // Call functions
 setup();
-//randomCells();
+randomCells();
 
 // Initial Setup of the function
 function setup() {
@@ -47,7 +47,8 @@ function createCells() {
 function randomCells() {
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
-            if (Math.random() < 0.5) cells[x][y]; //cells[x][y] = true;;
+            if (Math.random() < 0.5) context.fillRect(x, y, 1, 1)
+                // if (Math.random() < 0.5) cells[x][y]; //cells[x][y] = true;;
         }
     }
 }
