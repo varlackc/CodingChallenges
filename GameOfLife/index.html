@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="src/js/functionality.js"></script>
+
     <link rel="stylesheet" href="src/css/style.css">
     <title>Game Of Life</title>
 </head>
@@ -17,6 +17,9 @@
 
     <!-- Canvas where the grid will be displayed -->
     <canvas id="canvas"></canvas>
+
+    <!-- The script must load after the canvas is loaded -->
+    <script src="src/js/functionality.js"></script>
 </body>
 
 </html>
