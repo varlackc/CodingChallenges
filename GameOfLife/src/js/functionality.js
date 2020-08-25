@@ -14,11 +14,13 @@ const context = canvas.getContext('2d');
 const size = 800;
 const scale = 8;
 const resolution = size / scale;
+
 let cells;
 
 // Call functions
 setup();
 randomCells();
+drawCells();
 
 // Initial Setup of the function
 function setup() {
@@ -27,7 +29,7 @@ function setup() {
     context.scale(scale, scale);
     context.fillStyle = "black";
     context.fillRect(50, 50, 1, 1);
-    //cells = createCells();
+    cells = createCells();
 }
 
 // Create the actual Cell
@@ -39,6 +41,7 @@ function createCells() {
             cols[y] = false;
         }
         arr[x] = cols;
+        //rows[x] = cols;
     }
     return arr;
 }
@@ -47,8 +50,20 @@ function createCells() {
 function randomCells() {
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
-            if (Math.random() < 0.5) context.fillRect(x, y, 1, 1)
-                // if (Math.random() < 0.5) cells[x][y]; //cells[x][y] = true;;
+            //if (Math.random() < 0.5) context.fillRect(x, y, 1, 1)
+            if (Math.random() < 0.5) cells[x][y] = true; //cells[x][y] = true;;
         }
     }
+}
+
+function drawCells() {
+    for (let y = 0; y < resolution; y++) {
+        for (let x = 0; x < resolution; x++) {
+            if (cells[x][y]) context.fillRect(x, y, 1, 1);
+        }
+    }
+}
+
+function steps() {
+
 }
