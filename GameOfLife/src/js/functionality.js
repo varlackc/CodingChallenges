@@ -65,5 +65,9 @@ function drawCells() {
 }
 
 function steps() {
+    let newCells = createCells();
+    for (let y = 0; y < resolution; y++) {
+        for (let x = 0; x < resolution; x++)
+    }
 
 }
