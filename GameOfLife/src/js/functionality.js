@@ -78,7 +78,5 @@ function getNeighbourCount() {
         for (let xx = -1; xx < 2; xx++) {
             if (xx === 0 && yy === 0) continue;
         }
-    } {
-
     }
 }
