@@ -18,7 +18,7 @@ let cells;
 
 // Call functions
 setup();
-randomCells();
+//randomCells();
 
 // Initial Setup of the function
 function setup() {
@@ -26,7 +26,8 @@ function setup() {
     canvas.height = size;
     context.scale(scale, scale);
     context.fillStyle = "black";
-    cells = createCells();
+    context.fillRect(50, 50, 1, 1);
+    //cells = createCells();
 }
 
 // Create the actual Cell
