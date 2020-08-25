@@ -10,7 +10,7 @@
 
 // Declare Global Variables
 const canvas = document.getElementById("canvas");
-const context = canvas.getContext("2d");
+const context = canvas.getContext('2d');
 const size = 800;
 const scale = 8;
 const resolution = size / scale;
@@ -50,57 +50,3 @@ function randomCells() {
         }
     }
 }
-
-//function drawCells() {
-//for (let)
-//}
-
-/*
-
-function make2DArray(cols, rows) {
-    let arr = new Array(cols);
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] = new Array(rows);
-    }
-    return arr;
-}
-
-
-// Global variables
-let grid;
-let cols = 10;
-let rows = 10;
-
-function setup() {
-
-    grid = make2DArray(10, 10);
-    for (let i = 0; i < cols; i++) {
-        for (let j = 0; j < rows; j++) {
-            // Randomly populate the cells
-            grid[i][j] = floor(random(2));
-        }
-    }
-
-}
-
-/*
-$(document).ready(function() {
-
-
-    $('#submitButton').click(function() {
-
-        //Declare Variables
-        var message = "";
-        var result = "";
-
-        console.log("Game of Life Test");
-
-        // JavaScript 
-        $('#details').html(result);
-    });
-
-    $('#clearButton').click(function() {
-        $('#details').html(" ");
-    });
-});
-*/
