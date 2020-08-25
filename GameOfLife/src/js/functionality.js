@@ -71,3 +71,14 @@ function steps() {
     }
 
 }
+
+function getNeighbourCount() {
+    let count = 0;
+    for (let yy = -1; yy < 2; yy++) {
+        for (let xx = -1; xx < 2; xx++) {
+            if (xx === 0 && yy === 0) continue;
+        }
+    } {
+
+    }
+}
