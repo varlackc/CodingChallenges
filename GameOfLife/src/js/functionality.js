@@ -62,7 +62,7 @@ function randomCells() {
 }
 function drawCells() {
     context.fillStyle = "white"; // clear screen at the begining of each project
-    context.fillRect();
+    context.fillRect(0, 0, resolution, resolution);
     context.fillStyle = "black"; // set the default color back to black
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
