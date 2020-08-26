@@ -22,6 +22,8 @@ setup();
 randomCells();
 drawCells();
 
+console.log(getNeighbourCount(1, 1));
+
 // Initial Setup of the function
 function setup() {
     canvas.width = size;
@@ -84,4 +86,5 @@ function getNeighbourCount(x, y) {
             if (cells[x + xx][y + yy]) count++;
         }
     }
+    return count;
 }
