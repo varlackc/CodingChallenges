@@ -14,6 +14,7 @@ const context = canvas.getContext('2d');
 const size = 800;
 const scale = 8;
 const resolution = size / scale;
+// const speed = ;
 
 let cells;
 
@@ -21,6 +22,8 @@ let cells;
 setup();
 randomCells();
 drawCells();
+
+setInterval(step, 100);
 
 console.log(getNeighbourCount(1, 1));
 
@@ -57,8 +60,10 @@ function randomCells() {
         }
     }
 }
-
 function drawCells() {
+    context.fillStyle = "white"; // clear screen at the begining of each project
+    context.fillRect();
+    context.fillStyle = "black"; // set the default color back to black
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
             if (cells[x][y]) context.fillRect(x, y, 1, 1);
@@ -66,14 +71,19 @@ function drawCells() {
     }
 }
 
+// update the cells
 function step() {
     let newCells = createCells();
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
-
+            const neighbours = getNeighbourCount(x, y);
+            //Apply the game rules
+            if (cells[x][y] && neighbours >= 2 && neighbours <= 3) newCells[x][y] = true; // 2 to 3 cells stay alive
+            else if (!cells[x][y] && neighbours == 3) newCells[x][y] = true;
         }
     }
-
+    cells = newCells; // override cells
+    drawCells(); //draw the cells on the screen after update
 }
 
 function getNeighbourCount(x, y) {
