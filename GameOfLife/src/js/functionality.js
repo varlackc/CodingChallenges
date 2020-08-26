@@ -64,10 +64,12 @@ function drawCells() {
     }
 }
 
-function steps() {
+function step() {
     let newCells = createCells();
     for (let y = 0; y < resolution; y++) {
-        for (let x = 0; x < resolution; x++)
+        for (let x = 0; x < resolution; x++) {
+
+        }
     }
 
 }
