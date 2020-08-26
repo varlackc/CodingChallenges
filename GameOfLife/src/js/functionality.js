@@ -81,6 +81,7 @@ function getNeighbourCount(x, y) {
             if (xx === 0 && yy === 0) continue;
             if (x + xx < 0 || x + xx > resolution - 1) continue;
             if (y + yy < 0 || y + yy > resolution - 1) continue;
+            if (cells[x + xx][y + yy]) count++;
         }
     }
 }
