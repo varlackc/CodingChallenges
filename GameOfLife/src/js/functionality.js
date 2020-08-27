@@ -51,7 +51,10 @@ function createCells() {
     return arr;
 }
 
-// Generate random position of the cell
+/**
+ * Populate the screen by randomly generating cells on the screen
+ * 
+ */
 function randomCells() {
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
@@ -60,6 +63,10 @@ function randomCells() {
     }
 }
 
+/**
+ * Draw the cells on the screen
+ * 
+ */
 function drawCells() {
     context.fillStyle = "white"; // clear screen at the begining of each project
     context.fillRect(0, 0, resolution, resolution);
@@ -71,7 +78,7 @@ function drawCells() {
     }
 }
 
-// update the cells
+// update the cell using the rules of the game of life
 function step() {
     let newCells = createCells();
     for (let y = 0; y < resolution; y++) {
