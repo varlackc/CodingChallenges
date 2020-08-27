@@ -1,4 +1,4 @@
-/*
+/** 
         Game of Life
 
     Rules:
@@ -25,7 +25,9 @@ setInterval(step, 100);
 
 console.log(getNeighbourCount(1, 1));
 
-// Initial Setup of the function
+/**
+ *  Initial Setup of the function
+ **/
 function setup() {
     canvas.width = size;
     canvas.height = size;
