@@ -78,7 +78,10 @@ function drawCells() {
     }
 }
 
-// update the cell using the rules of the game of life
+/**
+ * update the cell using the rules of the game of life
+ * 
+ *  */
 function step() {
     let newCells = createCells();
     for (let y = 0; y < resolution; y++) {
