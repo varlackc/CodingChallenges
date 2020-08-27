@@ -14,7 +14,6 @@ const context = canvas.getContext('2d');
 const size = 800;
 const scale = 8;
 const resolution = size / scale;
-// const speed = ;
 
 let cells;
 
