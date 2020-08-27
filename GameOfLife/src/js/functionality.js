@@ -86,6 +86,12 @@ function step() {
     drawCells(); //draw the cells on the screen after update
 }
 
+/**
+ * Get the number of neighbours of cell
+ * 
+ * @param {x horizontal coordinate} x 
+ * @param {y vertical coordinate} y 
+ */
 function getNeighbourCount(x, y) {
     let count = 0;
     for (let yy = -1; yy < 2; yy++) {
