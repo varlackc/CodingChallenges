@@ -45,7 +45,6 @@ function createCells() {
             cols[y] = false;
         }
         arr[x] = cols;
-        //rows[x] = cols;
     }
     return arr;
 }
