@@ -21,7 +21,6 @@ let cells;
 setup();
 randomCells();
 drawCells();
-
 setInterval(step, 100);
 
 console.log(getNeighbourCount(1, 1));
