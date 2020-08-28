@@ -53,7 +53,6 @@ function createCells() {
 
 /**
  * Populate the screen by randomly generating cells on the screen
- * 
  */
 function randomCells() {
     for (let y = 0; y < resolution; y++) {
