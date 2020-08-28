@@ -36,7 +36,9 @@ function setup() {
     cells = createCells();
 }
 
-// Create the actual Cell
+/**
+ *  Create the actual Cell
+ */
 function createCells() {
     let arr = new Array(resolution);
     for (let x = 0; x < resolution; x++) {
