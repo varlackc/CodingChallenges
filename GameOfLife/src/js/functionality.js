@@ -64,7 +64,6 @@ function randomCells() {
 
 /**
  * Draw the cells on the screen
- * 
  */
 function drawCells() {
     context.fillStyle = "white"; // clear screen at the begining of each project
