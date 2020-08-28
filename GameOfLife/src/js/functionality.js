@@ -16,7 +16,10 @@ const scale = 8;
 const resolution = size / scale;
 let cells;
 
-// Call functions
+
+/**
+ * Call functions
+ */
 setup();
 randomCells();
 drawCells();
