@@ -78,7 +78,6 @@ function drawCells() {
 
 /**
  * update the cell using the rules of the game of life
- * 
  *  */
 function step() {
     let newCells = createCells();
