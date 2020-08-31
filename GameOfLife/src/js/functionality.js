@@ -98,7 +98,6 @@ function step() {
 
 /**
  * Get the number of neighbours of cell
- * 
  * @param {x horizontal coordinate} x 
  * @param {y vertical coordinate} y 
  */
