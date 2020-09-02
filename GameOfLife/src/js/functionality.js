@@ -15,7 +15,18 @@ const size = 800;
 const scale = 8;
 const resolution = size / scale;
 let cells;
+const slow = 50;
+const mid = 100;
+const fast = 200;
+var speed = 0;
+var slow = document.getElementById("slow");
+var mid = document.getElementById("mid");
+var fast = document.getElementById("fast");
 
+// setup speed
+if(slow){
+
+}
 
 /**
  * Call functions
