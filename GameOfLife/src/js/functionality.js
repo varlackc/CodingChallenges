@@ -19,14 +19,9 @@ const slow = 50;
 const mid = 100;
 const fast = 200;
 var speed = 0;
-var slow = document.getElementById("slow");
-var mid = document.getElementById("mid");
-var fast = document.getElementById("fast");
-
-// setup speed
-if(slow){
-
-}
+//var slow = document.getElementById("slow");
+//var mid = document.getElementById("mid");
+//var fast = document.getElementById("fast");
 
 /**
  * Call functions
@@ -37,7 +32,22 @@ drawCells();
 setInterval(step, 100);
 
 console.log(getNeighbourCount(1, 1));
-
+/*
+// setup speed
+const btn = document.querySelector('#btnSetup');
+// handle click button
+btn.onclick = function(){
+    const rbs = document.querySelectorAll('input[name="choice"]');
+    let selectedValue;
+    for (const rb of rbs){
+        if(rb.checked){
+            selectedValue = rb.nodeValue;
+            break;
+        }
+    }
+    alert(selectedValue);
+};
+*/
 /**
  *  Initial Setup of the function
  **/
