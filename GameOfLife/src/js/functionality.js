@@ -19,6 +19,7 @@ const slow = 50;
 const mid = 100;
 const fast = 200;
 var speed = 0;
+var interval;
 //                             var slow = document.getElementById("slow");
 //var mid = document.getElementById("mid");
 //var fast = document.getElementById("fast");
@@ -29,7 +30,7 @@ var speed = 0;
 setup();
 randomCells();
 drawCells();
-setInterval(step, 100);
+interval = setInterval(step, 100);
 
 console.log(getNeighbourCount(1, 1));
 /*
@@ -58,7 +59,16 @@ function setup() {
     context.fillStyle = "black";
     context.fillRect(50, 50, 1, 1);
     cells = createCells();
+    
+    //setup button logic
+   // button = createButton("Stop Application")
+    //button.mousePressed(stopGame);
 }
+
+// stop the application
+//function stopGame(){
+ //   clearInterval(interval);
+//}
 
 /**
  *  Create the actual Cell
