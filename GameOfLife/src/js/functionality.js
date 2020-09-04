@@ -19,7 +19,7 @@ const slow = 50;
 const mid = 100;
 const fast = 200;
 var speed = 0;
-var interval;
+//var interval;
 //var slow = document.getElementById("slow");
 //var mid = document.getElementById("mid");
 //var fast = document.getElementById("fast");
@@ -30,7 +30,9 @@ var interval;
 setup();
 randomCells();
 drawCells();
-interval = setInterval(step, 100);
+//interval = setInterval(step, 100);
+//setInterval(step, 100);
+gameRules();
 
 console.log(getNeighbourCount(1, 1));
 /*
@@ -110,9 +112,17 @@ function drawCells() {
     }
 }
 
+
 /**
  * update the cell using the rules of the game of life
  *  */
+function gameRules(){
+
+    var delay = 100;
+
+    interval = setInterval(step, delay);
+
+    //uses closure
 function step() {
     let newCells = createCells();
     for (let y = 0; y < resolution; y++) {
@@ -125,6 +135,7 @@ function step() {
     }
     cells = newCells; // override cells
     drawCells(); //draw the cells on the screen after update
+}
 }
 
 /**
