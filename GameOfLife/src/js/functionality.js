@@ -20,7 +20,7 @@ const mid = 100;
 const fast = 200;
 var speed = 0;
 var interval;
-//                             var slow = document.getElementById("slow");
+//                        var slow = document.getElementById("slow");
 //var mid = document.getElementById("mid");
 //var fast = document.getElementById("fast");
 
