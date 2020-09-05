@@ -118,15 +118,32 @@ function drawCells() {
  *  */
 function gameRules(){
 
-    var speed =  document.getElementById("btnClear");
+    var speed =  document.getElementById("btnSpeed").value;
     console.log("Speed: " + speed);
 
     var delay = 100;
+
+    
+    const rbs = document.querySelectorAll('input[name="choice"]');
+    let selectedValue;
+    for (const rb of rbs) {
+        if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+        }
+    }
+    
+
+    console.log(selectedValue);
 
     interval = setInterval(step, delay);
 
     //uses closure
 function step() {
+
+
+
+    
     let newCells = createCells();
     for (let y = 0; y < resolution; y++) {
         for (let x = 0; x < resolution; x++) {
