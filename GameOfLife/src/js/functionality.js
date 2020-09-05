@@ -118,6 +118,8 @@ function drawCells() {
  *  */
 function gameRules(){
 
+    var speed =  document.getElementById("btnClear")
+
     var delay = 100;
 
     interval = setInterval(step, delay);
