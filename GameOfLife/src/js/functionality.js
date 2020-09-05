@@ -118,7 +118,8 @@ function drawCells() {
  *  */
 function gameRules(){
 
-    var speed =  document.getElementById("btnClear")
+    var speed =  document.getElementById("btnClear");
+    console.log("Speed: " + speed);
 
     var delay = 100;
 
