@@ -121,10 +121,6 @@ function gameRules(){
     var speed =  document.getElementById("btnSpeed").value;
     console.log("Speed: " + speed);
 
-    if(speed == "slow")
-    {
-        print(speed);
-    }
 
     var delay = 100;
 
