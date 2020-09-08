@@ -10,7 +10,9 @@ class List extends React.Component {
 
     render() {
         return React.createElement('div', null, [
-            React.createElement('ul', null,)
+            React.createElement('ul', null, this.state.items.map(item => {
+                return React.createElement(ListItem, {title: item});
+            }))
         ]);
     }
 }
