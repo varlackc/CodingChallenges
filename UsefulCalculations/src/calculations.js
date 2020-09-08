@@ -16,3 +16,5 @@ class List extends React.Component {
         ]);
     }
 }
+
+ReactDOM.render(?React.createElement(List), document.getElementById("geometry-list"));
