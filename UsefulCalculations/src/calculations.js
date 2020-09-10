@@ -36,6 +36,13 @@ class List extends React.Component {
 
 ReactDOM.render(React.createElement(List), document.getElementById("geometry-list"));
 
+// Area of a rectangle
+function AreaOfRectangle(width, height)
+{
+    var area = width * height;
+    return area;
+}
+
 /**
  * List of usefull calculations
  * 
