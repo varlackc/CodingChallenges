@@ -49,9 +49,10 @@ function RectanglePerimeter(width, height)
     return perimeter;
 }
 
-function TriangleArea(width, height)
+function TriangleArea(base, height)
 {
-
+    var area = (base*height)/2;
+    return area;
 }
 
 /**
