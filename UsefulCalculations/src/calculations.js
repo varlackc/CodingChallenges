@@ -59,6 +59,7 @@ function TriangleArea(base, height)
     return area;
 }
 
+// Triangle Perimeter
 function TrianglePerimeter(base, side1, side2){
     var perimeter = base + side1 + side2;
     return perimeter;
