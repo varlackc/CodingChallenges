@@ -36,6 +36,8 @@ class List extends React.Component {
 
 ReactDOM.render(React.createElement(List), document.getElementById("geometry-list"));
 
+// Mathematical Calculations
+
 // Area of a rectangle
 function RectangleArea(width, height)
 {
