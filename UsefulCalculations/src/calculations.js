@@ -60,6 +60,12 @@ function TrianglePerimeter(base, side1, side2){
     return perimeter;
 }
 
+function CircleArea(radius)
+{
+    var area = (radius*radius*Math.PI);
+    return area;
+}
+
 /**
  * List of usefull calculations
  * 
