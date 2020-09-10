@@ -49,6 +49,11 @@ function RectanglePerimeter(width, height)
     return perimeter;
 }
 
+function TriangleArea(width, height)
+{
+
+}
+
 /**
  * List of usefull calculations
  * 
