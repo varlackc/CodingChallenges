@@ -72,6 +72,11 @@ function CircleArea(radius)
     return area;
 }
 
+function CirclePerimeter(radius){
+    var perimeter = (2*radius*Math.PI);
+    return perimeter;
+}
+
 /**
  * List of usefull calculations
  * 
