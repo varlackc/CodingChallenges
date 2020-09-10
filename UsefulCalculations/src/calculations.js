@@ -45,6 +45,7 @@ function RectangleArea(width, height)
     return area;
 }
 
+// Perimeter of rectangle
 function RectanglePerimeter(width, height)
 {
     var perimeter = (2*width) + (2*height);
