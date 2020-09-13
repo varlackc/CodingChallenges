@@ -64,10 +64,3 @@ function TrianglePerimeter(base, side1, side2){
     var perimeter = base + side1 + side2;
     return perimeter;
 }
-
-// Circle Area
-function CircleArea(radius)
-{
-    var area = (radius*radius*Math.PI);
-    return area;
-}
