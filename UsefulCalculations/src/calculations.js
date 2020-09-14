@@ -67,8 +67,18 @@ function SphereVolume(radius)
 }
 
 // Surface area of a cylinder
+function CylinderArea(radius, height)
+{
+    var area;
+    return area;
+}
 
 // Volume of a sphere
+function SphereVolume(radius)
+{
+    var radius;
+    return radius;
+}
 
 // Surface area of a cylinder
 
