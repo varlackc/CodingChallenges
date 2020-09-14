@@ -43,7 +43,13 @@ function CirclePerimeter(radius){
 
 // Surface area of a box
 
-// Volum of a box
+// Volume of a box
+
+// Surface area of a sphere
+
+// Volum of a sphere
+
+
 
 /**
  * List of usefull calculations
