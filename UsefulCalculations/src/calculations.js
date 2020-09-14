@@ -69,7 +69,7 @@ function CirclePerimeter(radius){
 
 // Non-linear model
 
-
+// System of linear equations
 
 /**
  * List of usefull calculations
