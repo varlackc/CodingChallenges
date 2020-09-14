@@ -105,6 +105,10 @@ function ExponentialFunction()
 }
 
 // Logarithmic functions
+function Logarithm()
+{
+    
+}
 
 // Exponential equations
 
