@@ -47,9 +47,19 @@ function CirclePerimeter(radius){
 
 // Surface area of a sphere
 
-// Volum of a sphere
+// Volume of a sphere
 
+// Surface area of a cylinder
 
+// Volume of a sphere
+
+// Surface area of a cylinder
+
+// Volume of a cylinder
+
+// Intercepts of a linear equation
+
+// A
 
 /**
  * List of usefull calculations
@@ -80,7 +90,7 @@ function CirclePerimeter(radius){
  * 
  * Intercepts of a linear equation
  * 
- * Auadratic formula, find vertex, quadratic regression
+ * Quadratic formula, find vertex, quadratic regression
  * 
  * Exponential functions
  * 
