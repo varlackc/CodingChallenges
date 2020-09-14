@@ -88,8 +88,15 @@ function CylinderVolume(radius, height)
 }
 
 // Intercepts of a linear equation
+function InterceptLinearEquation(){
+
+}
 
 // Quadratic formula, find vertex, quadratic regression
+function QuadraticFormula()
+{
+
+}
 
 // Exponential functions
 
