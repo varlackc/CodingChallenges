@@ -59,7 +59,9 @@ function CirclePerimeter(radius){
 
 // Intercepts of a linear equation
 
-// A
+// Quadratic formula, find vertex, quadratic regression
+
+// Exponential functions
 
 /**
  * List of usefull calculations
