@@ -107,10 +107,14 @@ function ExponentialFunction()
 // Logarithmic functions
 function Logarithm()
 {
-    
+
 }
 
 // Exponential equations
+function Exponential()
+{
+    
+}
 
 // Non-linear model
 
