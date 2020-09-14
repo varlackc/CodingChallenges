@@ -63,6 +63,14 @@ function CirclePerimeter(radius){
 
 // Exponential functions
 
+// Logarithmic functions
+
+// Exponential equations
+
+// Non-linear model
+
+
+
 /**
  * List of usefull calculations
  * 
@@ -100,8 +108,8 @@ function CirclePerimeter(radius){
  * 
  * Exponential equations
  * 
- * Non linear modelx
+ * Non linear model
  * 
- * syustems of linear equations
+ * systems of linear equations
  * 
  */
