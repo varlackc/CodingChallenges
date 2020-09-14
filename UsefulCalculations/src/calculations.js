@@ -41,6 +41,10 @@ function CirclePerimeter(radius){
     return perimeter;
 }
 
+// Surface area of a box
+
+// Volum of a box
+
 /**
  * List of usefull calculations
  * 
