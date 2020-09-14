@@ -80,8 +80,12 @@ function CylinderArea(radius, height)
     return area;
 }
 
-
 // Volume of a cylinder
+function CylinderVolume(radius, height)
+{
+    var volume;
+    return volume;
+}
 
 // Intercepts of a linear equation
 
