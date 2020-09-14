@@ -42,12 +42,25 @@ function CirclePerimeter(radius){
 }
 
 // Surface area of a box
+function BoxArea(width, length, height){
+
+}
 
 // Volume of a box
+function BoxVolume(width, length, height)
+{
+    var volume = width*length*height;
+    return volume;
+}
 
 // Surface area of a sphere
+function SphereArea(radius){
+    var area;
+    return area;
+}
 
 // Volume of a sphere
+function SphereVolume()
 
 // Surface area of a cylinder
 
@@ -70,46 +83,3 @@ function CirclePerimeter(radius){
 // Non-linear model
 
 // System of linear equations
-
-/**
- * List of usefull calculations
- * 
- * Area of a rectangle
- * 
- * perimeter of a rectangle
- * 
- * Area of a triangle
- * 
- * Perimeter of a triangle
- * 
- * Area of a circle
- * 
- * Perimeter of a circle
- * 
- * surface area of a box
- * 
- * volume of a box
- * 
- * surface area of a sphere, 
- * 
- * volume of a sphere
- * 
- * Surface area of a cylinder
- * 
- * volume of a cylinder
- * 
- * Intercepts of a linear equation
- * 
- * Quadratic formula, find vertex, quadratic regression
- * 
- * Exponential functions
- * 
- * Logarithmic functions
- * 
- * Exponential equations
- * 
- * Non linear model
- * 
- * systems of linear equations
- * 
- */
