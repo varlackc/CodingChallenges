@@ -99,6 +99,10 @@ function QuadraticFormula()
 }
 
 // Exponential functions
+function ExponentialFunction()
+{
+
+}
 
 // Logarithmic functions
 
