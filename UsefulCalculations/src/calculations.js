@@ -1,5 +1,8 @@
 
 // Mathematical Calculations
+function SelectCalculations(){
+    
+}
 
 // Area of a rectangle
 function RectangleArea(width, height)
