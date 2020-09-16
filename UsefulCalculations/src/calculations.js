@@ -1,7 +1,7 @@
 
 // Mathematical Calculations
 function SelectCalculations(){
-    
+    console.log("The Select Calculation Section Was Selected");
 }
 
 // Area of a rectangle
