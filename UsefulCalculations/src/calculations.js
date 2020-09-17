@@ -1,6 +1,11 @@
 
 // Mathematical Calculations
+
+// Select the calculations
 function SelectCalculations(){
+    var geometry;
+    var algebra;
+    var units;
     console.log("The Select Calculation Section Was Selected");
 }
 
