@@ -4,7 +4,6 @@
 
 $(document).ready(function() {
     $('#submitButton').click(function() {
-
         //Declare Variables
         var message = "";
         var fizzValue = parseInt($('#fizzValue').val());
@@ -28,7 +27,6 @@ $(document).ready(function() {
             message = ""; //reset the message value
         }
         result += "<br/>";
-
         // Output the result to the browser 
         $('#details').html(result);
     });
