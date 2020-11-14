@@ -1,0 +1,7 @@
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\bin\Debug\Calculator.exe.config
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\bin\Debug\Calculator.exe
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\bin\Debug\Calculator.pdb
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.exe
+D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.pdb
