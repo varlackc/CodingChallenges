@@ -25,7 +25,8 @@ namespace Calculator
         {
             _caretaker.Clear();
             _total = 0.0d;
-            //Todo: Finish
+            if (_caretaker.Count > 0) { _display = strings.String13 + _caretaker.Peek().Data; }// Update the display
+            else { _display = strings.String13 + _total; }
         }
 
         public void Undo()
@@ -34,9 +35,11 @@ namespace Calculator
             if (_caretaker.Count > 0)
             {
                 _caretaker.Pop();
+                if (_caretaker.Count != 0) { _display = strings.String13 + _caretaker.Peek().Data; }// update the display
+                else { _display = strings.String13 + 0; }
             }
             else {
-                _display = "“UNDO IS NOT AVAILABLE";
+                _display = strings.String17;
             }
             //Todo: Finish
         }
@@ -46,11 +49,14 @@ namespace Calculator
             return new Memento<double>(_total);
         }
 
-        public void Calcuate(string expression) 
+        public void Calculate(string expression) 
         {
             //declare variables
-            double num1, num2, runningTotal;
+            double num1, num2, runningTotal, temp = 0;
             string operant;
+
+
+            Memento<double> memento = new Memento<double>(); // declare memento object
 
 
             Regex regex = new Regex(@"^(-)?\d+(\.\d+)?\s[-+\*\/]\s(-)?\d+(\.\d+)?$");//Regular Expressions
@@ -70,31 +76,50 @@ namespace Calculator
                 {
                     case "+":
                         _total = num1 + num2;
+                        if(_caretaker.Count > 0){ temp = _caretaker.Peek().Data; } 
+                        runningTotal = temp + _total;
+                        memento.Data = runningTotal;
+                        _caretaker.Push(memento);
                         //_caretaker.Push(); // need to update the stack in order to populate the data for the undo function
                         _display = expression + " = " + _total.ToString();//update the display
-                        _display = "Sum: " + _total.ToString() + "; Running Total: " +;// need to correct the format based on the rubric
+                        _display = strings.String9 + _total.ToString() + "; "+ strings.String13 + runningTotal;// need to correct the format based on the rubric
                         break;
                     case "-":
                         _total = num1 - num2;
+                        if (_caretaker.Count > 0){temp = _caretaker.Peek().Data;}
+                        runningTotal = temp + _total;
+                        memento.Data = runningTotal;
+                        _caretaker.Push(memento);
                         _display = expression + " = " + _total.ToString();//update the display
+                        _display = strings.String10 + _total.ToString() + "; " + strings.String13 + runningTotal;// need to correct format
                         break;
                     case "*":
                         _total = num1 * num2;
+                        if (_caretaker.Count > 0){ temp = _caretaker.Peek().Data;}
+                        runningTotal = temp + _total;
+                        memento.Data = runningTotal;
+                        _caretaker.Push(memento);
                         _display = expression + " = " + _total.ToString();//update the display
+                        _display = strings.String11 + _total.ToString() + "; " + strings.String13 + runningTotal; // Need to correct format
                         break;
                     case "/":
                         if (num2 != 0)
                         {
                             _total = num1 / num2;
+                            if (_caretaker.Count > 0){temp = _caretaker.Peek().Data;}
+                            runningTotal = temp + _total;
+                            memento.Data = runningTotal;
+                            _caretaker.Push(memento);
                             _display = expression + " = " + _total.ToString();//update the display
+                            _display = strings.String12 + _total.ToString() + "; " + strings.String13 + runningTotal; // Need to correct format
                         }
                         else {
-                            Console.WriteLine("Can not divide by zero");
-                            _display = expression + " =  Undefined";//update the display
+                            Console.WriteLine(strings.String14);
+                            _display = expression + " =  "+ strings.String15;//update the display
                         }
                         break;
                     default:
-                        _display = "There seems to be an error verify your expression";//Update the display
+                        _display = strings.String16;//Update the display
                         break;
                 }
             }
@@ -112,7 +137,7 @@ namespace Calculator
         }
         public void Exit()
         {
-
+            System.Environment.Exit(0); // exit the application
         }
     }
 }

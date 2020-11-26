@@ -5,3 +5,18 @@ D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calcu
 D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.exe
 D:\Davenport\CSCI312 data stru algo\Week 8\Assignment\Calculator\obj\Debug\Calculator.pdb
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.exe
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.pdb
+C:\Users\user\Documents\Programming\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\user\Documents\Programming\Calculator\bin\Debug\Calculator.exe
+C:\Users\user\Documents\Programming\Calculator\bin\Debug\Calculator.pdb
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.strings.resources
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\user\Documents\Programming\Calculator\bin\Debug\es\Calculator.resources.dll
+C:\Users\user\Documents\Programming\Calculator\bin\Debug\fr\Calculator.resources.dll
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.strings.es.resources
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\Calculator.strings.fr.resources
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\es\Calculator.resources.dll
+C:\Users\user\Documents\Programming\Calculator\obj\Debug\fr\Calculator.resources.dll
