@@ -1,12 +1,13 @@
 # CodingChallenges
 Here is a list of different coding challenges
 * FizzBuzz
-    This challenge is used to describe the properties of a number system
+    - This challenge is used to describe the properties of a number system
 * Game Of Life
-    Is used to explore the cellular automata concepts.
+    - Is used to explore the cellular automata concepts.
 * Calculator
-    Calculator with features such as undo using the memento design pattern. 
+    - Calculator with features such as undo using the memento design pattern. 
+    - In addition the calculator uses localization in order to support other languages
 * Local JSON
-    Get local json data in external files locally. 
+    - Get local json data in external files locally. 
 
 Other Coding Challenges will be added as needed
