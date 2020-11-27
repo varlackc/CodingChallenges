@@ -11,4 +11,4 @@ Here is a list of different coding challenges
 * Local JSON
     - Get local json data in external files locally. 
 
-Other Coding Challenges will be added as needed
+Other Coding Challenges will be added as needed.
