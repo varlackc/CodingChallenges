@@ -24,6 +24,9 @@ In addition the project also is used to practice a minimalist design.
 Not only the program completes the desired task, but the program was used to practice design principles. 
 
 ## Functionality
+The program display a set of integer numbers and outputs the string fizz or buzz depending on the divisibility of each individual integer. 
+
+In addition, the program allows the user to control certain paramethers such as what values will be divisible by the fizz values, the divisibility of the buzz value, the starting number and the end number. 
 
 ## Design
 
