@@ -29,6 +29,9 @@ The program display a set of integer numbers and outputs the string fizz or buzz
 In addition, the program allows the user to control certain paramethers such as what values will be divisible by the fizz values, the divisibility of the buzz value, the starting number and the end number. 
 
 ## Design
+In this case we chose a simple design. The main idea behind the design is readability and beauty. In order to ensure readability, bold typefaces were used, a background immage was used to create visual interest, and a padding with background color was used on the output values in order to make it easy for the user to identify the results. 
+
+A cool color palett was used in order to give the application a calm look. In addition line brakes were used in order to separate the program description, the input section and the output section. 
 
 ## Run Locally
 
