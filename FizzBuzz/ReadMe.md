@@ -11,12 +11,45 @@ Build a Fizz Buzz program that takes outputs a list of numbers and prints fizz o
 
 * The program should be visually appealing
 
-* The program must be written in simple JS without frameworks
+* The program must be written in simple JS without using any additional frameworks
 
 * Use version control (github)
+
+* Make the design of the program visually appealing
 
 ## Summary
 This application was built in order to practice java script and DOM manipulation. The program does not make use of any third party libraries. 
 
 In addition the project also is used to practice a minimalist design. 
 Not only the program completes the desired task, but the program was used to practice design principles. 
+
+## Functionality
+
+## Design
+
+## Run Locally
+
+* Download the FizzBuzz repository
+
+* Go to the FizzBuzz download
+
+* Uncompres the Zip File
+
+* Go into the folder
+
+* Double click on the index.html file
+
+* Once the program opens, fill out the fields, add the fizz, buzz, start value and end value
+
+* Click on the Run the program button
+
+* If you want to try a new convination you can click on the clear screen, enter your new parameters, and click on run the program again.  
+
+
+## Tech Stack
+
+* HTML5
+
+* CSS3
+
+* Java Script
