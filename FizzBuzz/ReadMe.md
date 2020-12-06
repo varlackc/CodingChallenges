@@ -1,6 +1,6 @@
 # Fizz Buzz
 
-### Fizz Buzz program used to practice programming logic and sintax. 
+### Fizz Buzz program used to practice programming logic and syntax. 
 
 ## Task
 Build a Fizz Buzz program that takes outputs a list of numbers and prints fizz or buzz depending on whether the numbers are even or odd. 
