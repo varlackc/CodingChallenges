@@ -11,5 +11,15 @@ We also will use language localization.
 Build a calculator that has an undo feature by the use of the memento design pattern. Use regular expressions in order to validate the input strings. 
 Make use of localization by the use of resx files. In other words create a calculator that can display the information to the user in different languages. 
 
+## Criteria
+
+* The program should open on the console
+
+* The program should make accurate calcualtions
+
+* The program should keep track of a running total
+
+* The program should have an undo feature using the memento design pattern. 
+
 ## Stack
 - C# 
