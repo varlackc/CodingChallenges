@@ -1,7 +1,7 @@
 # Retos de Programacion
 Aqui esta una lista de diferentes retos de programmacion
 * FizzBuzz
-    - This challenge is used to describe the properties of a number system
+    - Este es un reto utilizado para describir las propiedades de un sistema numerico.
 * Juego De La Vida
     - Is used to explore the cellular automata concepts.
 * Calculadora
