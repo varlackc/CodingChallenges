@@ -1,2 +1,2 @@
-# Modulos en Java Script
+# Modulos en JavaScript
 
