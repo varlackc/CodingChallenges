@@ -8,4 +8,7 @@ body{
 
 .container{
     text-align: center;
+    margin: 50px;
+    padding: 10px;
+    background: #D9F3E4;
 }
