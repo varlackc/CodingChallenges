@@ -1,5 +1,6 @@
 body{
-
+    text-align: center;
+    background: #D9F3E4;
 }
 
 .title{
@@ -8,7 +9,10 @@ body{
 
 .container{
     text-align: center;
-    margin: 50px;
-    padding: 10px;
-    background: #D9F3E4;
+    margin: 100px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background: #96e7b8;
+    border: solid 1px #777;
 }
