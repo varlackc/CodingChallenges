@@ -15,4 +15,55 @@ body{
     height: 200px;
     background: #96e7b8;
     border: solid 1px #777;
+    margin: 0 auto; /*Center the Div*/
+}
+
+/*
+div {
+    background: #96e7b8;
+    border: solid 1px #777;
+    width: 50%;
+    margin: 0 auto; 
+}
+*/
+.board {
+    text-align: center;
+    background: #96e7b8;
+    border: solid 1px #777;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; /*Center the Div*/
+}
+
+#topLeft{
+    display: inline-block;
+}
+#topCenter{
+    display: inline-block;
+}
+
+#topRight{
+    display: inline-block;
+}
+
+#midLeft{
+
+}
+#midCenter{
+
+}
+
+#midRight{
+    
+}
+
+#bottomLeft{
+
+}
+#bottomCenter{
+
+}
+
+#bottomRight{
+    
 }
