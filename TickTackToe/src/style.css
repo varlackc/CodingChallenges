@@ -7,17 +7,6 @@ body{
     text-align: center;
 }
 
-.container{
-    text-align: center;
-    margin: 100px;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
-    background: #96e7b8;
-    border: solid 1px #777;
-    margin: 0 auto; /*Center the Div*/
-}
-
 /*
 div {
     background: #96e7b8;
@@ -28,15 +17,18 @@ div {
 */
 .board {
     text-align: center;
+    font-size: xx-large;
     background: #96e7b8;
     border: solid 1px #777;
-    width: 100px;
-    height: 100px;
+    padding: 25px 25px 25px 25px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto; /*Center the Div*/
 }
 
 #topLeft{
     display: inline-block;
+    text-align: center;
 }
 #topCenter{
     display: inline-block;
@@ -47,23 +39,23 @@ div {
 }
 
 #midLeft{
-
+    display: inline-block; 
 }
 #midCenter{
-
+    display: inline-block;
 }
 
 #midRight{
-    
+    display: inline-block;
 }
 
 #bottomLeft{
-
+    display: inline-block;
 }
 #bottomCenter{
-
+    display: inline-block;
 }
 
 #bottomRight{
-    
+    display: inline-block;
 }
