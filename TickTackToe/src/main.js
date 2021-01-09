@@ -1,9 +1,23 @@
 // Declare the board
 var board = [['','',''], ['','',''], ['','','']]
 
+// Declare the character to use
+var stamp = 'O';
+function SelectCharacter(){
+    var selectCharacter = document.getElementById("CharacterSelect").value;
+    console.log(selectCharacter);
+    switch(selectCharacter){
+        case "O":
+            stamp = selectCharacter;
+            break;
+        case "X":
+            stamp = selectCharacter;
+            break;
+    }
+}
+
 function clickEvent(id){
     //update the front end
-    var stamp = "X";
     document.getElementById(id).innerHTML = stamp;
     
     //update the board values
