@@ -62,3 +62,7 @@ function clickEvent(id){
     //display result
     console.log(board);
 };
+
+function SelectNextMove(board){
+    
+}
