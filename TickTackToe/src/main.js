@@ -3,15 +3,18 @@ var board = [['','',''], ['','',''], ['','','']]
 
 // Declare the character to use
 var stamp = 'O';
+var computerStamp = 'X';
 function SelectCharacter(){
     var selectCharacter = document.getElementById("CharacterSelect").value;
     console.log(selectCharacter);
     switch(selectCharacter){
         case "O":
             stamp = selectCharacter;
+            computerStamp = 'X';
             break;
         case "X":
             stamp = selectCharacter;
+            computerStamp = 'O';
             break;
     }
 }
@@ -64,5 +67,15 @@ function clickEvent(id){
 };
 
 function SelectNextMove(board){
-    
+    //Attack the center of the board
+    if(board[1][1] == '')
+    {
+        board[1][1] = computerStamp;
+        document.getElementById("midCenter").innerHTML = computerStamp;
+    }
+    //place an element on the board
+    if((board[0][1] !== '' && board[0][2] !== '') || (board[1][0] !== '' && board[2][0] !== '')&&(board[0][0] == '')){
+        board[0][0] = computerStamp;
+        document.getElementById("topLeft").innerHTML = computerStamp;
+    }
 }
