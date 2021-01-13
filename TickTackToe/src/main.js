@@ -74,17 +74,42 @@ function SelectNextMove(board){
         document.getElementById("midCenter").innerHTML = computerStamp;
     }
     //place an element on the board
-    if((board[0][1] !== '' && board[0][2] !== '') || (board[1][0] !== '' && board[2][0] !== '')&&(board[0][0] == '')){
+    if(((board[0][1] !== '' && board[0][2] !== '') || (board[1][0] !== '' && board[2][0] !== ''))&&(board[0][0] == '')){
         board[0][0] = computerStamp;
         document.getElementById("topLeft").innerHTML = computerStamp;
     }
-    if((board[0][0] !== '' && board[0][2] !== '') || (board[1][1] !== '' && board[1][2] !== '')&&(board[0][1] == '')){
+    if(((board[0][0] !== '' && board[0][2] !== '') || (board[1][1] !== '' && board[1][2] !== ''))&&(board[0][1] == '')){
         board[0][1] = computerStamp;
         document.getElementById("topCenter").innerHTML = computerStamp;
     }
-    if((board[0][0] !== '' && board[0][1] !== '') || (board[2][1] !== '' && board[2][2] !== '')&&(board[0][2] == '')){
+    if(((board[0][0] !== '' && board[0][1] !== '') || (board[2][1] !== '' && board[2][2] !== ''))&&(board[0][2] == '')){
         board[0][2] = computerStamp;
         document.getElementById("topRight").innerHTML = computerStamp;
     }
+
+
+    if(((board[1][1] !== '' && board[1][2] !== '') || (board[0][0] !== '' && board[2][0] !== ''))&&(board[1][0] == '')){
+        board[1][0] = computerStamp;
+        document.getElementById("midLeft").innerHTML = computerStamp;
+    }
+    if(((board[1][0] !== '' && board[1][1] !== '') || (board[0][2] !== '' && board[2][2] !== ''))&&(board[1][2] == '')){
+        board[1][2] = computerStamp;
+        document.getElementById("midRight").innerHTML = computerStamp;
+    }
+
+    if((board[2][1] !== '' && board[2][2] !== '') || (board[0][0] !== '' && board[1][0] !== '')&&(board[2][0] == '')){
+        board[2][0] = computerStamp;
+        document.getElementById("bottomLeft").innerHTML = computerStamp;
+    }
+    if((board[0][1] !== '' && board[1][1] !== '') || (board[2][0] !== '' && board[2][2] !== '')&&(board[2][1] == '')){
+        board[2][1] = computerStamp;
+        document.getElementById("bottomCenter").innerHTML = computerStamp;
+    }
+    if((board[0][2] !== '' && board[1][2] !== '') || (board[2][0] !== '' && board[2][1] !== '')&&(board[2][2] == '')){
+        board[2][2] = computerStamp;
+        document.getElementById("bottomRight").innerHTML = computerStamp;
+    }
+
+
     return board;
 }
