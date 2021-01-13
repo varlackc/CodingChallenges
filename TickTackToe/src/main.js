@@ -86,4 +86,5 @@ function SelectNextMove(board){
         board[0][2] = computerStamp;
         document.getElementById("topRight").innerHTML = computerStamp;
     }
+    return board;
 }
