@@ -69,45 +69,45 @@ function clickEvent(id){
 function SelectNextMove(board){
 
     //Try to find a wining strategy
-    if(((board[0][1] !== '' && board[0][2] !== '') || (board[1][0] !== '' && board[2][0] !== ''))&&(board[0][0] == '')){
+    if(((board[0][1] == board[0][2] && board[0][2] !== '' && board[0][0] == '') || (board[1][0] == board[2][0] && board[2][0] !== '' && board[0][0] == ''))){
         board[0][0] = computerStamp;
         document.getElementById("topLeft").innerHTML = computerStamp;
         return board;
     }
-    if(((board[0][0] !== '' && board[0][2] !== '') || (board[1][1] !== '' && board[1][2] !== ''))&&(board[0][1] == '')){
+    if(((board[0][0] == board[0][2] && board[0][2] !== '' && board[0][1] == '') || (board[1][1] !== '' && board[1][2] !== ''))&&(board[0][1] == '')){
         board[0][1] = computerStamp;
         document.getElementById("topCenter").innerHTML = computerStamp;
         return board;
     }
-    if(((board[0][0] !== '' && board[0][1] !== '') || (board[2][1] !== '' && board[2][2] !== ''))&&(board[0][2] == '')){
+    if(((board[0][0] == board[0][1] && board[0][1] !== '' && board[0][2] == '') || (board[2][1] !== '' && board[2][2] !== ''))&&(board[0][2] == '')){
         board[0][2] = computerStamp;
         document.getElementById("topRight").innerHTML = computerStamp;
         return board;
     }
 
 
-    if(((board[1][1] !== '' && board[1][2] !== '') || (board[0][0] !== '' && board[2][0] !== ''))&&(board[1][0] == '')){
+    if(((board[1][1] == board[1][2] && board[1][2] !== '' && board[1][0] == '') || (board[0][0] !== '' && board[2][0] !== ''))&&(board[1][0] == '')){
         board[1][0] = computerStamp;
         document.getElementById("midLeft").innerHTML = computerStamp;
         return board;
     }
-    if(((board[1][0] !== '' && board[1][1] !== '') || (board[0][2] !== '' && board[2][2] !== ''))&&(board[1][2] == '')){
+    if(((board[1][0] == board[1][1] && board[1][1] !== '' && board[1][2] == '') || (board[0][2] !== '' && board[2][2] !== ''))&&(board[1][2] == '')){
         board[1][2] = computerStamp;
         document.getElementById("midRight").innerHTML = computerStamp;
         return board;
     }
 
-    if((board[2][1] !== '' && board[2][2] !== '') || (board[0][0] !== '' && board[1][0] !== '')&&(board[2][0] == '')){
+    if((board[2][1] == board[2][2] && board[2][2] !== '' && board[2][0] == '') || (board[0][0] !== '' && board[1][0] !== '')&&(board[2][0] == '')){
         board[2][0] = computerStamp;
         document.getElementById("bottomLeft").innerHTML = computerStamp;
         return board;
     }
-    if((board[0][1] !== '' && board[1][1] !== '') || (board[2][0] !== '' && board[2][2] !== '')&&(board[2][1] == '')){
+    if((board[0][1] == board[1][1] && board[1][1] !== '' && board[2][1] == '') || (board[2][0] !== '' && board[2][2] !== '')&&(board[2][1] == '')){
         board[2][1] = computerStamp;
         document.getElementById("bottomCenter").innerHTML = computerStamp;
         return board;
     }
-    if((board[0][2] !== '' && board[1][2] !== '') || (board[2][0] !== '' && board[2][1] !== '')&&(board[2][2] == '')){
+    if((board[0][2] == board[1][2] && board[1][2] !== '' && board[2][2] == '') || (board[2][0] !== '' && board[2][1] !== '')&&(board[2][2] == '')){
         board[2][2] = computerStamp;
         document.getElementById("bottomRight").innerHTML = computerStamp;
         return board;
@@ -122,15 +122,15 @@ function SelectNextMove(board){
     }
 
     // If no wining moves are available then look for an available move
-    if(board[0][0]){ board[0][0] = computerStamp; document.getElementById("topLeft").innerHTML = computerStamp; return board;}
-    if(board[0][1]){ board[0][1] = computerStamp; document.getElementById("topCenter").innerHTML = computerStamp; return board;}
-    if(board[0][2]){ board[0][2] = computerStamp; document.getElementById("topRight").innerHTML = computerStamp; return board;}
+    if(board[0][0] == ''){ board[0][0] = computerStamp; document.getElementById("topLeft").innerHTML = computerStamp; return board;}
+    if(board[0][1] == ''){ board[0][1] = computerStamp; document.getElementById("topCenter").innerHTML = computerStamp; return board;}
+    if(board[0][2] == ''){ board[0][2] = computerStamp; document.getElementById("topRight").innerHTML = computerStamp; return board;}
 
-    if(board[1][0]){ board[1][0] = computerStamp; document.getElementById("midLeft").innerHTML = computerStamp; return board;}
-    if(board[1][2]){ board[1][2] = computerStamp; document.getElementById("midRight").innerHTML = computerStamp; return board;}
+    if(board[1][0] == ''){ board[1][0] = computerStamp; document.getElementById("midLeft").innerHTML = computerStamp; return board;}
+    if(board[1][2] == ''){ board[1][2] = computerStamp; document.getElementById("midRight").innerHTML = computerStamp; return board;}
 
-    if(board[2][0]){ board[2][0] = computerStamp; document.getElementById("bottomLeft").innerHTML = computerStamp; return board;}
-    if(board[2][1]){ board[2][1] = computerStamp; document.getElementById("bottomCenter").innerHTML = computerStamp; return board;}
-    if(board[2][2]){ board[2][2] = computerStamp; document.getElementById("bottomRight").innerHTML = computerStamp; return board;}
+    if(board[2][0] == ''){ board[2][0] = computerStamp; document.getElementById("bottomLeft").innerHTML = computerStamp; return board;}
+    if(board[2][1] == ''){ board[2][1] = computerStamp; document.getElementById("bottomCenter").innerHTML = computerStamp; return board;}
+    if(board[2][2] == ''){ board[2][2] = computerStamp; document.getElementById("bottomRight").innerHTML = computerStamp; return board;}
 }
 
