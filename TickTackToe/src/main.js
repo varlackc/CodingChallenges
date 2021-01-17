@@ -77,7 +77,7 @@ function SelectNextMove(board){
         return board;
     }
     //Top Center
-    if((board[0][0] == board[0][2] && board[0][2] !== '' && board[0][1] == '') || (board[1][1] == board[1][2] && board[0][1] == '')){
+    if((board[0][0] == board[0][2] && board[0][2] !== '' && board[0][1] == '') || (board[1][1] == board[2][1] && board[2][1] !== '' && board[0][1] == '')){
         board[0][1] = computerStamp;
         document.getElementById("topCenter").innerHTML = computerStamp;
         return board;
@@ -90,9 +90,16 @@ function SelectNextMove(board){
     }
 
     //Mid Left
-    if((board[1][1] == board[1][2] && board[1][2] !== '' && board[1][0] == '') || (board[0][0] == board[2][0] && board[1][0] == '')){
+    if((board[1][1] == board[1][2] && board[1][2] !== '' && board[1][0] == '') || (board[0][0] == board[2][0] && board[2][0] !== '' && board[1][0] == '')){
         board[1][0] = computerStamp;
         document.getElementById("midLeft").innerHTML = computerStamp;
+        return board;
+    }
+    //Mid Center
+    if((board[0][0] == board[2][2] && board[2][2] !== '' && board[1][1] == '')||(board[0][2] == board[2][0] && board[2][0] != '' && board[1][1] == '')||
+    (board[0][1] == board[2][1] && board[2][1] != '' && board[1][1] == '')||(board[1][0] == board[1][2] && board[1][2] != '' && board[1][1] == '')){
+        board[1][1] = computerStamp;
+        document.getElementById("midCenter").innerHTML = computerStamp;
         return board;
     }
     //Mid Right
@@ -103,7 +110,8 @@ function SelectNextMove(board){
     }
 
     // Bottom Left
-    if((board[2][1] == board[2][2] && board[2][2] !== '' && board[2][0] == '') || (board[0][0] == board[1][0] && board[1][0] !== '' && board[2][0] == '')){
+    if((board[2][1] == board[2][2] && board[2][2] !== '' && board[2][0] == '') || (board[0][0] == board[1][0] && board[1][0] !== '' && board[2][0] == '')||
+    (board[1][1] == board[0][2] && board[0][2] != ''&& board[2][0] == '')){
         board[2][0] = computerStamp;
         document.getElementById("bottomLeft").innerHTML = computerStamp;
         return board;
@@ -115,7 +123,8 @@ function SelectNextMove(board){
         return board;
     }
     // Bottom Right
-    if((board[0][2] == board[1][2] && board[1][2] !== '' && board[2][2] == '') || (board[2][0] ==  board[2][1] && board[2][1] !== '' && board[2][2] == '')){
+    if((board[0][2] == board[1][2] && board[1][2] !== '' && board[2][2] == '') || (board[2][0] ==  board[2][1] && board[2][1] !== '' && board[2][2] == '')||
+    (board[0][0] == board[1][1] && board[1][1] !== '' && board[2][2] == '')){
         board[2][2] = computerStamp;
         document.getElementById("bottomRight").innerHTML = computerStamp;
         return board;
@@ -142,3 +151,66 @@ function SelectNextMove(board){
     if(board[2][2] == ''){ board[2][2] = computerStamp; document.getElementById("bottomRight").innerHTML = computerStamp; return board;}
 }
 
+function DetermineGameWin(board)
+{
+    //Horizontal Win
+    if(board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][2] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+    if(board[1][1] == board[1][1] && board[1][1] == board[1][2] && board[1][2] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+    if(board[2][0] == board[2][1] && board[2][1] == board[2][2] && board[2][2] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+
+    //Vertical Win
+    if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[2][0] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+    if(board[0][1] == board[1][1] && board[1][1] == board[2][1] && board[2][1] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+    if(board[0][2] == board[1][2] && board[1][2] == board[2][2] && board[2][2] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+
+    //Diagonal Win
+    if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[2][2] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+    if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[2][0] !== '')
+    {
+        document.getElementById("WinningMessage").innerHTML = "Win !!!";
+        return "Win !!!";
+    }
+    return "Continue Game";
+}
+
+function GameLogic(){
+    // Loop to allow for the game logic
+
+    // Get User Input
+
+    // Determine Game Win
+
+    // Select Next Move
+
+    // Determine Game Win
+}
+
+GameLogic();
