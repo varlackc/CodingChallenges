@@ -83,35 +83,38 @@ function SelectNextMove(board){
         return board;
     }
     //Top Right
-    if((board[0][0] == board[0][1] && board[0][1] !== '' && board[0][2] == '') || (board[2][1] == board[2][2] && board[2][2] !== '' && board[0][2] == '')
-        || (board[0][2] == board[1][1] && board[1][1] !== '' && board[2][0] == '')){
+    if((board[0][0] == board[0][1] && board[0][1] !== '' && board[0][2] == '') || (board[2][1] == board[2][2] && board[2][2] !== '' && board[0][2] == '')|| (board[2][0] == board[1][1] && board[1][1] !== '' && board[0][2] == '')){
         board[0][2] = computerStamp;
         document.getElementById("topRight").innerHTML = computerStamp;
         return board;
     }
 
-
+    //Mid Left
     if((board[1][1] == board[1][2] && board[1][2] !== '' && board[1][0] == '') || (board[0][0] == board[2][0] && board[1][0] == '')){
         board[1][0] = computerStamp;
         document.getElementById("midLeft").innerHTML = computerStamp;
         return board;
     }
+    //Mid Right
     if((board[1][0] == board[1][1] && board[1][1] !== '' && board[1][2] == '') || (board[0][2] == board[2][2] && board[2][2] !== '' &&  board[1][2] == '')){
         board[1][2] = computerStamp;
         document.getElementById("midRight").innerHTML = computerStamp;
         return board;
     }
 
+    // Bottom Left
     if((board[2][1] == board[2][2] && board[2][2] !== '' && board[2][0] == '') || (board[0][0] == board[1][0] && board[1][0] !== '' && board[2][0] == '')){
         board[2][0] = computerStamp;
         document.getElementById("bottomLeft").innerHTML = computerStamp;
         return board;
     }
+    // Bottom Mid
     if((board[0][1] == board[1][1] && board[1][1] !== '' && board[2][1] == '') || (board[2][0] == board[2][2] && board[2][2] !== '' && board[2][1] == '')){
         board[2][1] = computerStamp;
         document.getElementById("bottomCenter").innerHTML = computerStamp;
         return board;
     }
+    // Bottom Right
     if((board[0][2] == board[1][2] && board[1][2] !== '' && board[2][2] == '') || (board[2][0] ==  board[2][1] && board[2][1] !== '' && board[2][2] == '')){
         board[2][2] = computerStamp;
         document.getElementById("bottomRight").innerHTML = computerStamp;
