@@ -157,52 +157,56 @@ function DetermineGameWin(board)
     if(board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][2] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
     if(board[1][1] == board[1][1] && board[1][1] == board[1][2] && board[1][2] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
     if(board[2][0] == board[2][1] && board[2][1] == board[2][2] && board[2][2] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
 
     //Vertical Win
     if(board[0][0] == board[1][0] && board[1][0] == board[2][0] && board[2][0] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
     if(board[0][1] == board[1][1] && board[1][1] == board[2][1] && board[2][1] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
     if(board[0][2] == board[1][2] && board[1][2] == board[2][2] && board[2][2] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
 
     //Diagonal Win
     if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[2][2] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
     if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[2][0] !== '')
     {
         document.getElementById("WinningMessage").innerHTML = "Win !!!";
-        return "Win !!!";
+        return True;
     }
-    return "Continue Game";
+    return False;
 }
 
 function GameLogic(){
+    // Declare variables
+    var gameStops = False;
+
     // Loop to allow for the game logic
+    while(gameStops){
 
     // Get User Input
 
@@ -211,6 +215,8 @@ function GameLogic(){
     // Select Next Move
 
     // Determine Game Win
+    gameStops = DetermineGameWin(board);
+    }
 }
 
 GameLogic();
