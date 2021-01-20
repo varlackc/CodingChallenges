@@ -203,7 +203,7 @@ function DetermineGameWin(board)
 
 function GameLogic(){
     // Declare variables
-    var gameStops = False;
+    var gameStops = false;
 
     // Loop to allow for the game logic
     while(gameStops){
@@ -211,8 +211,10 @@ function GameLogic(){
     // Get User Input
 
     // Determine Game Win
+    gameStops = DetermineGameWin(board);
 
     // Select Next Move
+    SelectNextMove(board);
 
     // Determine Game Win
     gameStops = DetermineGameWin(board);
