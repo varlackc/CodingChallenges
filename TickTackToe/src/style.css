@@ -1,6 +1,7 @@
 body{
     text-align: center;
     background: #D9F3E4;
+    background-image: url('pexels-photo-220053.jpeg');
 }
 
 .title{
@@ -16,6 +17,16 @@ body{
     width: 50px;
     height: 50px;
     margin: 0 auto; /*Center the Div*/
+    opacity: 0.8;
+}
+
+h1{
+    color:azure;
+}
+
+h3{
+    color:azure;
+    background-color: green;
 }
 
 #topLeft{
@@ -51,3 +62,4 @@ body{
 #bottomRight{
     display: inline-block;
 }
+
