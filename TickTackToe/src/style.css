@@ -63,3 +63,12 @@ h3{
     display: inline-block;
 }
 
+button{
+	background-color: green;
+	font-size: 16px;
+}
+
+option{
+	font-weight: bold; 
+	font-size: 16px;
+}
