@@ -10,5 +10,7 @@ Here is a list of different coding challenges
     - The calculator uses regular expresions in order to validate the calculator input. 
 * Local JSON
     - Get local json data in external files locally. 
+* Tick Tack Toe
+    - Is used to explore design of algorithms, web development and web design. 
 
 Other Coding Challenges will be added as needed.
