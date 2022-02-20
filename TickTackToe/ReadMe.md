@@ -8,5 +8,5 @@ In addition the program will make use of multidimensional arrays in order to sim
 The game will be build using only HTML, CCS, and Vanilla JavaScript. No additional libraries or frameworks will be used. 
 
 ## Stack
-The stack used include HTML, CSS, and JavaScript. 
+The stack used include `HTML`, `CSS 3`, and `JavaScript`. 
 No front end libraries were used. 
