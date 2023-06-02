@@ -1,4 +1,4 @@
-# CodingChallenges
+# Coding Challenges
 Here is a list of different coding challenges, the coding challenges are intended as exercises used to practice some basic programming concepts in a practical way. Here is a list of challenges:
 
 * FizzBuzz
