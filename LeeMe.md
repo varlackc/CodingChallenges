@@ -1,5 +1,5 @@
 # Retos de Programacion
-Aqui esta una lista de diferentes retos de programmacion
+Aqui esta una lista de diferentes retos de programmacion, la intencion de los retos de programacion es practicar conceptos basicos de programacion. Aqui esta una lista de retos de programacion:
 * FizzBuzz
     - Este es un reto utilizado para describir las propiedades de un sistema numerico.
 * Juego De La Vida
